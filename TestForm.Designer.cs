@@ -30,7 +30,7 @@
         {
             this.listGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.listGridView)).BeginInit();
-            this.SuspendLayout();
+            this.SuspendLayout(); //Changge something
             // 
             // listGridView
             // 
