@@ -2,30 +2,32 @@ namespace Stopwatch
 {
     partial class Form1
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Timer tmrCountdown;
+        private System.Windows.Forms.Label lblCountdown;
+        private System.Windows.Forms.Label lblHours;
+        private System.Windows.Forms.Label lblMinutes;
+        private System.Windows.Forms.Label lblSeconds;
+        private System.Windows.Forms.NumericUpDown numHours;
+        private System.Windows.Forms.NumericUpDown numMinutes;
+        private System.Windows.Forms.NumericUpDown numSeconds;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnPause;
+        private System.Windows.Forms.Button btnResume;
+        private System.Windows.Forms.Button btnReset;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -54,8 +56,8 @@ namespace Stopwatch
             // lblCountdown
             //
             this.lblCountdown.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
+                | System.Windows.Forms.AnchorStyles.Left)
+                | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCountdown.Font = new System.Drawing.Font("Consolas", 64F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCountdown.Location = new System.Drawing.Point(20, 20);
             this.lblCountdown.Name = "lblCountdown";
@@ -102,11 +104,7 @@ namespace Stopwatch
             this.numHours.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.numHours.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.numHours.Location = new System.Drawing.Point(230, 220);
-            this.numHours.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
+            this.numHours.Maximum = new decimal(new int[] { 99, 0, 0, 0 });
             this.numHours.Name = "numHours";
             this.numHours.Size = new System.Drawing.Size(90, 32);
             this.numHours.TabIndex = 2;
@@ -117,11 +115,7 @@ namespace Stopwatch
             this.numMinutes.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.numMinutes.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.numMinutes.Location = new System.Drawing.Point(355, 220);
-            this.numMinutes.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
+            this.numMinutes.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
             this.numMinutes.Name = "numMinutes";
             this.numMinutes.Size = new System.Drawing.Size(90, 32);
             this.numMinutes.TabIndex = 4;
@@ -132,11 +126,7 @@ namespace Stopwatch
             this.numSeconds.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.numSeconds.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.numSeconds.Location = new System.Drawing.Point(480, 220);
-            this.numSeconds.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
+            this.numSeconds.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
             this.numSeconds.Name = "numSeconds";
             this.numSeconds.Size = new System.Drawing.Size(90, 32);
             this.numSeconds.TabIndex = 6;
@@ -214,22 +204,8 @@ namespace Stopwatch
             ((System.ComponentModel.ISupportInitialize)(this.numSeconds)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
-
-        private System.Windows.Forms.Timer tmrCountdown;
-        private System.Windows.Forms.Label lblCountdown;
-        private System.Windows.Forms.Label lblHours;
-        private System.Windows.Forms.Label lblMinutes;
-        private System.Windows.Forms.Label lblSeconds;
-        private System.Windows.Forms.NumericUpDown numHours;
-        private System.Windows.Forms.NumericUpDown numMinutes;
-        private System.Windows.Forms.NumericUpDown numSeconds;
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnPause;
-        private System.Windows.Forms.Button btnResume;
-        private System.Windows.Forms.Button btnReset;
     }
 }
